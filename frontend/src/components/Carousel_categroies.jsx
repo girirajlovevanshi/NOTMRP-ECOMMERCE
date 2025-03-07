@@ -40,12 +40,12 @@ function Carousel_categroies() {
                 className="card shadow-xl hover:shadow-2xl transition"
               >
                 <div className="card-body">
-                  <h3 className="card-title">{cat.name}</h3>
-                  <p className="text-sm text-gray-600">
-                    Shop amazing deals in {cat.name}!
-                  </p>
+
                   <Link to={`/category/${cat._id}`} className="btn btn-primary mt-4">
-                    View Category
+                    <h3 className="card-title">{cat.name}</h3>
+                    <p className="text-sm text-gray-600">
+                      Shop amazing deals in {cat.name}!
+                    </p>
                   </Link>
                 </div>
               </div>
