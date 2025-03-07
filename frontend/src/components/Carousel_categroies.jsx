@@ -32,20 +32,17 @@ function Carousel_categroies() {
         < h2 className="text-3xl font-bold mb-6" > Product Categories</h2 >
 
         {/* Categories Grid */}
-        < div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" >
+        < div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5" >
           {
             categories.map(cat => (
               <div
                 key={cat._id}
                 className="card shadow-xl hover:shadow-2xl transition"
               >
-                <div className="card-body">
+                <div className="card-body ">
 
-                  <Link to={`/category/${cat._id}`} className="btn btn-primary mt-4">
-                    <h3 className="card-title">{cat.name}</h3>
-                    <p className="text-sm text-gray-600">
-                      Shop amazing deals in {cat.name}!
-                    </p>
+                  <Link to={`/category/${cat._id}`} className="btn btn-primary mt-4 bg-green-50	text-lime-700 ">
+                    <h3 className="card-title ">{cat.name}</h3>
                   </Link>
                 </div>
               </div>
